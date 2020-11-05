@@ -1,5 +1,7 @@
 # 先选择maven基础镜像作为编译服务镜像
-FROM maven:3.6.3-openjdk-8 AS builder
+# 3.6.3-springboot2.1 用的是本人自定义的maven镜像, 有空的话这个会继续更新
+# 3.6.3指的是maven版本(已经修改settings.xml指向阿里镜像库), springboot2.1指的是镜像已经包含springboot2.1的基础依赖
+FROM wangxgh/maven:3.6.3-springboot2.1 AS builder
 # 源码添加
 ADD . /app
 WORKDIR /app
