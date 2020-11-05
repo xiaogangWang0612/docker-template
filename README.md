@@ -17,4 +17,5 @@
 ## 其他建议
 ````
 使用docker发布系统时候, 强烈建议将docker服务产生的文件挂在到宿主机, 避免日志丢失
+如果要修改docker.sh脚本内容,请在git控制台执行: git config --global core.autocrlf false
 ````
